@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIitasaari AI Hackathon Vol 4</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-gradient {
+            background: linear-gradient(90deg, #10B981, #065F46);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+    <!-- Navigation Bar -->
+    <header class="bg-gray-800 shadow-lg py-4 px-6 md:px-12 sticky top-0 z-50">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto">
+            <a href="#hero" class="text-2xl font-extrabold text-gradient">
+                VIITASAARI HACKATHON
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
+                <a href="#teams" class="hover:text-teal-400 transition-colors">Teams</a>
+                <a href="#cases" class="hover:text-teal-400 transition-colors">Cases</a>
+                <a href="#schedule" class="hover:text-teal-400 transition-colors">Schedule</a>
+                <a href="#sponsors" class="hover:text-teal-400 transition-colors">Sponsors</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="hero" class="relative py-20 md:py-32 flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABALDAzMDAzKyAyMDAyRjYkNjsyKzEtNzg3LCw5K0xSZEhMQzk+RDI+Tj0uGzIwY2VpZndnQ2g3M2Y2QjdwbGz/2wBDARRERY+gMBgRGYmJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJdJd/T/wAARCAEAAQADASIAAhEBAxEB/8QAGQABAQEBAQEAAAAAAAAAAAAAAAECAwQG/8QAHRABAQEAAwEBAQEAAAAAAAAAAAECAxESITFBUf/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQP/xAAYEQEBAQEBAAAAAAAAAAAAAAAAAREhQf/aAAwDAQACEQMRAD8A9UAAAAAAAAAAVKACgAAAAAAAAAAAAAAAAAAAAAAAAACqAAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAAAAACgAAAAAAHIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z" alt="AI-generated futuristic technology background" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gray-900 opacity-70"></div>
+            </div>
+            <div class="relative z-10 max-w-4xl mx-auto px-4 space-y-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight text-white tracking-tight">
+                    <span class="text-gradient block">VIITASAARI AI HACKATHON</span>
+                    <span class="block text-4xl md:text-6xl font-extrabold mt-2 text-gray-200">VOL 4.0</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 font-light max-w-prose mx-auto">
+                    Innovate. Collaborate. Transform.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#cases" class="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-teal-700 focus:outline-none focus:ring-4 focus:ring-teal-300">
+                        Show Cases
+                    </a>
+                    <a href="#schedule" class="inline-block bg-gray-700 text-gray-200 font-semibold py-3 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-500">
+                        View Schedule
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-800 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 space-y-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100">About the Hackathon</h2>
+                <p class="text-lg text-gray-400 max-w-prose mx-auto">
+                    A highly successful event for the fourth time, bringing together companies and students. For two days, participants work in close collaboration to find a solution to a challenge. Students use their expertise and experience to develop practical and innovative ideas.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center pt-8">
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400 mx-auto mb-4" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-11H9V9h2V7h2v2h2v2h-2v2h-2v-2z"/>
+                        </svg>
+                        <h3 class="text-xl font-bold text-white mb-2">Real-world Challenges</h3>
+                        <p class="text-gray-400">Tackle genuine problems presented by top companies.</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400 mx-auto mb-4" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-11H9V9h2V7h2v2h2v2h-2v2h-2v-2z"/>
+                        </svg>
+                        <h3 class="text-xl font-bold text-white mb-2">Expert Mentorship</h3>
+                        <p class="text-gray-400">Receive guidance from industry leaders and AI specialists.</p>
+                    </div>
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transform transition-transform hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-teal-400 mx-auto mb-4" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-11H9V9h2V7h2v2h2v2h-2v2h-2v-2z"/>
+                        </svg>
+                        <h3 class="text-xl font-bold text-white mb-2">Networking Opportunities</h3>
+                        <p class="text-gray-400">Connect with companies, recruiters, and fellow innovators.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="bg-gray-900 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 space-y-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100">Event Schedule</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left">
+                    <!-- Pre-Hackathon Day -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg lg:col-span-2">
+                        <h3 class="text-2xl font-bold text-teal-400 mb-6">September 29th: Pre-Hackathon Day</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">10:30 - 15:30</span>
+                                <span>Visit the **Jamk Talent Boost office** (Rajakatu 35 Main Campus, D124) for comprehensive information about the Hackathon.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Day 1 -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-teal-400 mb-6">September 30th: Day 1</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">7:40 - 9:00</span>
+                                <span>Travelling to Viitasaari by bus from Jamk Dynamo Campus (Piippukatu 2, 40100 Jyväskylä).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">9:00 - 9:30</span>
+                                <span>Introductions, morning coffee, tour of Witas Oy and Digikeskus.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">9:30 - 11:30</span>
+                                <span>Company presentations, starting to work on the cases in the private meeting rooms of Witas Oy.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">11:30 - 13:15</span>
+                                <span>Lunch (you can have lunch at any time during this time slot).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">13:15 - 15:00</span>
+                                <span>Active Hackathon work.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">15:00 - 16:30</span>
+                                <span>Startup Refugees Presentation + Workshop.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">16:30 - 17:40</span>
+                                <span>Activities, tour of Viitasaari.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">17:45 - 18:30</span>
+                                <span>Getting settled at the campsite.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">18:40 - 19:30</span>
+                                <span>Dinner, free time.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">19:30 - 22:00</span>
+                                <span>Games and evening program (Sauna, grill).</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">22:00</span>
+                                <span>Bed time.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Day 2 -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-teal-400 mb-6">October 1st: Day 2</h3>
+                        <ul class="space-y-4 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">7:15</span>
+                                <span>Wake up time.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">7:30 - 8:30</span>
+                                <span>Breakfast/Morning prep.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">8:45</span>
+                                <span>Leaving the camp.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">9:00</span>
+                                <span>Arrival at the Digital Centre.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">9:00 - 11:30</span>
+                                <span>Working with the case companies.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">11:30 - 12:45</span>
+                                <span>Lunch.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">12:45 - 14:00</span>
+                                <span>Presentations and pitching prep.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">14:00 - 16:00</span>
+                                <span>Afternoon coffee + presentations.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">16:00 - 16:30</span>
+                                <span>Conclusions and awarding.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">16:30 - 18:00</span>
+                                <span>Optional extended city tour.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">18:15 - 18:30</span>
+                                <span>Drive back to JKL.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="font-bold w-32 flex-shrink-0">20:00</span>
+                                <span>The bus is dropping everyone off at the Dynamo Campus.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Teams Section -->
+        <section id="teams" class="bg-gray-800 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 space-y-12 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100">Student Teams</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    <!-- Team: Mistix -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-xl text-white">Mistix (AI Consulting)</h3>
+                        <ul class="mt-4 space-y-1 text-gray-300">
+                            <li>Negin Hamian</li>
+                            <li>Shariff Kwizera Sano</li>
+                            <li>Amirreza Salehpour</li>
+                            <li>Vishodha Silva</li>
+                            <li>Fahima Akter</li>
+                            <li>Nasrin Razavi Miyandeh</li>
+                        </ul>
+                    </div>
+                    <!-- Team: VidSoft Mon -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-xl text-white">VidSoft Mon (Website Development)</h3>
+                        <ul class="mt-4 space-y-1 text-gray-300">
+                            <li>Md Nazmul Alom</li>
+                            <li>Rehnuma Heikintalo</li>
+                            <li>Danial Farooq</li>
+                            <li>Md Nasrul Islam</li>
+                            <li>Mst Jannatul Tazrin Riya</li>
+                            <li>Bernard Enning</li>
+                        </ul>
+                    </div>
+                    <!-- Team: Muxuni -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-xl text-white">Muxuni (Health & Social Services)</h3>
+                        <ul class="mt-4 space-y-1 text-gray-300">
+                            <li>Amine Bahous</li>
+                            <li>Sheraz Ahmad</li>
+                            <li>Samuel Adeleke</li>
+                            <li>Niyayesh Norouzi</li>
+                            <li>Ammar Al-khanjarawy</li>
+                            <li>Madusha Welikala</li>
+                        </ul>
+                    </div>
+                    <!-- Team: Less Pain -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-xl text-white">Less Pain (Healthcare/Gadgets)</h3>
+                        <ul class="mt-4 space-y-1 text-gray-300">
+                            <li>Fahim Hasan Elahi</li>
+                            <li>Shalitha Dehigaspitiyage</li>
+                            <li>Alper Hünkar Demirci</li>
+                            <li>Zahra Rahmani Ghobadi</li>
+                            <li>Syed Ali Asmer</li>
+                            <li>Muhammad Hassan Ali</li>
+                        </ul>
+                    </div>
+                    <!-- Team: Tuohia Oy -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-xl text-white">Tuohia Oy (Webshops)</h3>
+                        <ul class="mt-4 space-y-1 text-gray-300">
+                            <li>Abdullah Azam</li>
+                            <li>Dang Le</li>
+                            <li>Hasan Chaudry</li>
+                            <li>Mohammad Ghafouri Varzaneh</li>
+                            <li>Fatemeh Yousefi Far</li>
+                            <li>Manisha Kumari</li>
+                        </ul>
+                    </div>
+                    <!-- Team: Keski-Suomen Yrittäjät -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-xl text-white">Keski-Suomen Yrittäjät</h3>
+                        <ul class="mt-4 space-y-1 text-gray-300">
+                            <li>Yaroslav Romashko</li>
+                            <li>Mohammad Imranul Ferdoues</li>
+                            <li>Muhammad Feroz</li>
+                            <li>Maha Abdo</li>
+                            <li>Meraj Heydari</li>
+                            <li>Zuhaib Alam</li>
+                        </ul>
+                    </div>
+                     <!-- Team: Witas -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg">
+                        <h3 class="font-bold text-xl text-white">Witas</h3>
+                        <ul class="mt-4 space-y-1 text-gray-300">
+                            <li>Saira Zuhaib</li>
+                            <li>Negar Hossein-nezhad Daneshvar</li>
+                            <li>Firat Eren</li>
+                            <li>Sandun Thilakarathna</li>
+                            <li>Pavithra Pujapitiyage</li>
+                            <li>Boon Thu</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Cases Section -->
+        <section id="cases" class="bg-gray-800 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 space-y-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100">Company Challenges</h2>
+                <div class="space-y-6 text-left max-w-4xl mx-auto">
+                    <!-- Case 1: Mistix -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-colors hover:bg-gray-600 cursor-pointer" onclick="toggleDetails('mistix-details')">
+                        <h3 class="font-bold text-lg text-white">1. <a href="https://www.mistix.ai/" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:underline">Mistix</a> (AI Consulting)</h3>
+                        <p class="text-gray-400">AI Transformation in Healthcare</p>
+                        <div id="mistix-details" class="mt-4 space-y-2 text-sm text-gray-300 hidden">
+                            <p><strong>Industry:</strong> AI consulting</p>
+                            <p><strong>Contact Person:</strong> Lili Vafaei (<a href="mailto:lili@mistix.ai" class="text-teal-400 hover:underline">lili@mistix.ai</a>)</p>
+                            <p><strong>For more help about project contact:</strong> Negin Hamian</p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Challenge Submission:</h4>
+                                <p>Participants act as consultants tasked with designing and prototyping an AI-powered solution that improves efficiency and patient outcomes in a mid-sized hospital network.</p>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Desired Outcome:</h4>
+                                <p>The possible outcomes are diverse — ranging from an AI agent that optimizes patient scheduling, to an assistant that helps doctors monitor the healing process of post-surgery scars.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Case 2: VidSoft Mon -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-colors hover:bg-gray-600 cursor-pointer" onclick="toggleDetails('vidsoft-details')">
+                        <h3 class="font-bold text-lg text-white">2. <a href="http://www.vidsoftmon.com/" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:underline">VidSoft Mon</a> (Website Development)</h3>
+                        <p class="text-gray-400">Dynamic Website Development</p>
+                        <div id="vidsoft-details" class="mt-4 space-y-2 text-sm text-gray-300 hidden">
+                            <p><strong>Industry:</strong> Website Development</p>
+                            <p><strong>Contact Person:</strong> Md. Nazmul Alom (<a href="mailto:vidsoftmon@gmail.com" class="text-teal-400 hover:underline">vidsoftmon@gmail.com</a>)</p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Challenge Submission:</h4>
+                                <p>I expect a fully finished website, professional creative design for my company.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Case 3: Muxuni -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-colors hover:bg-gray-600 cursor-pointer" onclick="toggleDetails('muxuni-details')">
+                        <h3 class="font-bold text-lg text-white">3. <a href="http://www.muxuni.com/" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:underline">Muxuni</a> (Health & Social Services)</h3>
+                        <p class="text-gray-400">Creating a team — Coding guys are missing</p>
+                        <div id="muxuni-details" class="mt-4 space-y-2 text-sm text-gray-300 hidden">
+                            <p><strong>Industry:</strong> Health and Social Services</p>
+                            <p><strong>Contact Person:</strong> Gael White (<a href="mailto:info@muxuni.com" class="text-teal-400 hover:underline">info@muxuni.com</a>)</p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Challenge Submission:</h4>
+                                <p>Europe’s fertility rate is at historic lows, and young adults are increasingly delaying or avoiding parenthood. Parents face long childcare waitlists, loss of income during leave, and isolation from support networks. Muxuni’s challenge for participants is to design and scale solutions that make parenting easier, safer, and more financially sustainable—removing these barriers so that more families can confidently choose to have children.</p>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Desired Outcome:</h4>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Make childcare more accessible, affordable, and flexible.</li>
+                                    <li>Help parents maintain income and career continuity during parental leave.</li>
+                                    <li>Strengthen community trust networks among families.</li>
+                                    <li>Use digital tools (AI, automation, mobile-first) to reduce friction for parents.</li>
+                                </ul>
+                                <p>The outcome is prototypes, features, or service concepts that could be integrated into Muxuni to directly improve parents’ quality of life and reduce barriers to having children.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Case 4: Less Pain -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-colors hover:bg-gray-600 cursor-pointer" onclick="toggleDetails('less-pain-details')">
+                        <h3 class="font-bold text-lg text-white">4. Less Pain (Healthcare/Gadgets)</h3>
+                        <p class="text-gray-400">Better results in digital marketing</p>
+                        <div id="less-pain-details" class="mt-4 space-y-2 text-sm text-gray-300 hidden">
+                            <p><strong>Industry:</strong> Healthcare/Gadgets</p>
+                            <p><strong>Contact Person:</strong> Kuura Raitio (Meet at Digikeskus)</p>
+                            <p><strong>Other Contacts:</strong> Tatu or Sani</p>
+                            <p><strong>Email:</strong> <a href="mailto:kuura.raitio@gmail.com" class="text-teal-400 hover:underline">kuura.raitio@gmail.com</a></p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Challenge Submission:</h4>
+                                <p>This challenge focuses on **marketing and acquiring funding** for a new product. Participants are tasked with:</p>
+                                <ul class="list-disc list-inside space-y-1">
+                                    <li>Developing a social media marketing campaign to build brand awareness.</li>
+                                    <li>Creating a comprehensive marketing plan.</li>
+                                    <li>Finding ways to gain funding for the product.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Case 5: Tuohia Oy -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-colors hover:bg-gray-600 cursor-pointer" onclick="toggleDetails('tuohia-details')">
+                        <h3 class="font-bold text-lg text-white">5. <a href="http://www.tuohia.com" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:underline">Tuohia Oy</a> (Webshops & Product Development)</h3>
+                        <p class="text-gray-400">Getting more webshop orders</p>
+                        <div id="tuohia-details" class="mt-4 space-y-2 text-sm text-gray-300 hidden">
+                            <p><strong>Industry:</strong> Webshops for fishing items and fishing items production, own Tuohia brand product develope.</p>
+                            <p><strong>Contact Person:</strong> Tero or Tatu</p>
+                            <p><strong>Contact Email:</strong> <a href="mailto:asiakaspalvelu@tuohia.com" class="text-teal-400 hover:underline">asiakaspalvelu@tuohia.com</a></p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Challenge Submission:</h4>
+                                <p>How to get more orders to webshop? Tuohia have good quantity of visitors in webshop, Facebook and Instagram platform, but too few orders is coming. Tuohia have nice products what are only available in Tuohia webshop, how to make marketing more interesting and how to give good interesting product information what leeds to order. How to make for web shop visitor clear the benefits of Tuohia products?</p>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Desired Outcome:</h4>
+                                <p>Tools and feed back to make marketing more effective, what is lacking, what Tuohia need more, how to be better and better in marketing. Understanding of disgital marketing principals, what works, what is not working.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Case 6: Keski-Suomen Yrittäjät -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-colors hover:bg-gray-600 cursor-pointer" onclick="toggleDetails('keski-suomen-details')">
+                        <h3 class="font-bold text-lg text-white">6. <a href="https://www.yrittajat.fi/aluejarjestot/keski-suomen-yrittajien-hankkeet/yrityskaupaks-hanke/" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:underline">Keski-Suomen Yrittäjät</a> (Social Services)</h3>
+                        <p class="text-gray-400">New M&A assessment tool</p>
+                        <div id="keski-suomen-details" class="mt-4 space-y-2 text-sm text-gray-300 hidden">
+                            <p><strong>Website:</strong> <a href="https://www.yrittajat.fi/aluejarjestot/keski-suomen-yrittajien-hankkeet/yrityskaupaks-hanke/" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:underline">YrityskaupaKS-hanke</a></p>
+                            <p><strong>Contact Person:</strong> Markus Johansson (<a href="mailto:markus.johansson@yrittajat.fi" class="text-teal-400 hover:underline">markus.johansson@yrittajat.fi</a>)</p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Challenge Submission:</h4>
+                                <p>A new M&A assessment tool for entrepreneurs to check their company's "Salesfit".</p>
+                                <p class="mt-2">Entrepreneurs, especially for small-sized companies, don't know or can't estimate themselves in what kind of shape their business is concerning a corporate transaction. We would like to create a form that is easy to use, with a questionnaire they can fill out. After that, the form, using an AI, suggests what is need to be done. Segments and questions can be for example financial, legal, IPR, ESG, variance of customers, employees, etc. After the fixing has been done inside the company, the entrepreneur who is selling their company can achieve a better valuation and get more interested buyers to negotiate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Case 7: Witas -->
+                    <div class="bg-gray-700 p-6 rounded-xl shadow-lg transition-colors hover:bg-gray-600 cursor-pointer" onclick="toggleDetails('witas-details')">
+                        <h3 class="font-bold text-lg text-white">7. <a href="https://witas.fi" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:underline">Witas</a> (Student Dashboard / AI Agent in Telegram)</h3>
+                        <p class="text-gray-400">Developing a student dashboard or an AI agent in Telegram.</p>
+                        <div id="witas-details" class="mt-4 space-y-2 text-sm text-gray-300 hidden">
+                            <p><strong>Website:</strong> <a href="https://witas.fi" target="_blank" rel="noopener noreferrer" class="text-teal-400 hover:underline">witas.fi</a></p>
+                            <p><strong>Contact Person:</strong> Sani</p>
+                            <div class="mt-4">
+                                <h4 class="font-bold text-white">Challenge Submission:</h4>
+                                <p>Your mission is to design and build a web-based dashboard with two distinct interfaces: one for the Admin and one for the Trainee. The platform must be robust, intuitive, and serve as the single source of truth for all trainee-related activities.</p>
+                                <p class="mt-2">The trainee dashboard is a personalized hub designed for productivity and growth. It empowers trainees to take ownership of their work, seek help when needed, and clearly report their achievements.</p>
+                                <p class="mt-2">The second challenge is to build and launch an intelligent AI chatbot on the Telegram platform. This bot will act as an instant, on-demand guide for the Witas community, answering questions and providing information directly within their favorite messaging app.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="bg-gray-900 py-16 md:py-24 text-center">
+            <div class="max-w-7xl mx-auto px-4 space-y-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-100">Our Sponsors</h2>
+                <div class="flex justify-center flex-wrap items-center gap-8 md:gap-12">
+                    <!-- Sponsor Logos -->
+                    <img src="https://lennatin.fi/wp-content/themes/digikeskus-lennatin/svg/rahoittajat/Euroopan_unionin_osarahoittama_POS.svg" alt="Euroopan unionin osarahoittama logo" class="h-16 md:h-20 w-auto filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="https://witas.fi/wp-content/uploads/elementor/thumbs/WitasOy-logo-q79rnpztme2lqi5feoreoenovc5xfcaw9wk9tdwrs8.jpg" alt="Witas Oy logo" class="h-16 md:h-20 w-auto filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="https://lennatin.fi/wp-content/uploads/2023/09/vierekkain_digilennatin-2.png" alt="Lyhty Viitasaari logo" class="h-16 md:h-20 w-auto filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="https://www.jamk.fi/sites/default/files/2022-01/jamk_tunnus_sininen.png" alt="JAMK logo" class="h-16 md:h-20 w-auto filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                    <img src="https://lennatin.fi/wp-content/uploads/2023/09/digikeskus-valkoinen-1024x181.png" alt="Digikeskus logo" class="h-16 md:h-20 w-auto filter grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center space-y-4">
+            <h3 class="text-xl font-bold text-gray-100">Contact Us</h3>
+            <div class="text-sm space-y-4 max-w-xl mx-auto">
+                <div class="flex flex-col items-center">
+                    <p class="font-bold text-gray-200">Ms. Anna Tenhunen (Jamk)</p>
+                    <p>Coordinator, Talent Boost</p>
+                    <p>+358504112215 (SMS or call on office hours)</p>
+                    <a href="mailto:anna.tenhunen@jamk.fi" class="text-teal-400 hover:underline">anna.tenhunen@jamk.fi</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <p class="font-bold text-gray-200">Mirva Jäntti (Digikeskus)</p>
+                    <p>Project Manager at Witas</p>
+                    <p>040 707 9618</p>
+                    <a href="mailto:mirva.jantti@witas.fi" class="text-teal-400 hover:underline">mirva.jantti@witas.fi</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <p class="font-bold text-gray-200">Tatu Tuohimetsä (Digikeskus)</p>
+                    <p>Project Specialist</p>
+                    <p>040 831 8118</p>
+                    <a href="mailto:tatu.tuohimetsa@witas.fi" class="text-teal-400 hover:underline">tatu.tuohimetsa@witas.fi</a>
+                </div>
+                <div class="flex flex-col items-center">
+                    <p class="font-bold text-gray-200">Ehsan Mohajer (Sani) (Digikeskus)</p>
+                    <p>Project Specialist</p>
+                    <p>040 528 2852</p>
+                    <a href="mailto:ehsan.mohajer@witas.fi" class="text-teal-400 hover:underline">ehsan.mohajer@witas.fi</a>
+                </div>
+            </div>
+            
+            <!-- QR Code Section -->
+            <div class="space-y-4 pt-8 border-t border-gray-700 mt-8">
+                <h4 class="text-2xl font-bold text-gray-100">Scan to Register!</h4>
+                <p class="text-gray-400 max-w-md mx-auto">
+                    Once this website is live on GitHub Pages, you can use the QR code below to quickly share the registration link with others.
+                </p>
+                <div class="flex justify-center p-4 bg-gray-700 rounded-xl shadow-inner">
+                    <!-- This QR code is a placeholder. You will need to generate a real one once your site is live. -->
+                    <img src="https://placehold.co/200x200/10B981/ffffff?text=QR+Code+Here" alt="Placeholder QR Code" class="rounded-lg shadow-md max-w-full h-auto">
+                </div>
+                <p class="text-sm text-gray-500">
+                    To create your QR code, simply use a free online QR code generator and paste your GitHub Pages URL or a direct registration link.
+                </p>
+            </div>
+            <div class="text-xs text-gray-500 mt-4 pt-4 border-t border-gray-700">
+                <p>All right reserved for Ehsan Mohajer (Sani) @ 2025.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle the visibility of case details
+        function toggleDetails(elementId) {
+            const detailsElement = document.getElementById(elementId);
+            detailsElement.classList.toggle('hidden');
+        }
+
+        // Function to show a custom message box
+        function showMessageBox(message, type = 'info') {
+            const messageBox = document.createElement('div');
+            messageBox.className = `fixed bottom-4 right-4 p-4 rounded-lg shadow-lg text-white z-[100]`;
+            messageBox.style.backgroundColor = type === 'error' ? '#EF4444' : '#10B981';
+            messageBox.textContent = message;
+            document.body.appendChild(messageBox);
+            setTimeout(() => messageBox.remove(), 5000);
+        }
+    </script>
+</body>
+</html>
